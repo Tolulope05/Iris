@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:lets_chat/features/onboarding/components/custom_slider.dart';
 import 'package:lets_chat/shared/const.dart';
 import 'package:lottie/lottie.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});

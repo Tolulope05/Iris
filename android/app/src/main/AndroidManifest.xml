@@ -1,7 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lets_chat">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+  
    <application
-        android:label="lets_chat"
+        android:label="Iris"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
