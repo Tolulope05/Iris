@@ -20,7 +20,6 @@ class Iris extends StatelessWidget {
     return ProviderScope(
       child: MaterialApp.router(
         title: 'Iris',
-        debugShowCheckedModeBanner: false,
         theme: lightThemeData,
         routerConfig: router,
       ),
