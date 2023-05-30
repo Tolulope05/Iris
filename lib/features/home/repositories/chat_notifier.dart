@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lets_chat/features/home/models/chat.dart';
 import 'package:lets_chat/features/home/models/conversation_state_model.dart';
 import 'package:lets_chat/shared/const.dart';
-import 'package:lets_chat/shared/keys.dart';
 import 'package:text_to_speech/text_to_speech.dart';
 
 class ChatRepo extends StateNotifier<ConversationState> {
@@ -35,7 +34,7 @@ class ChatRepo extends StateNotifier<ConversationState> {
     tts = TextToSpeech();
     tts.setRate(1);
     tts.speak(defaultWelcomeGreet);
-    chatGpt = ChatGPT.builder(token: secretToken);
+    chatGpt = ChatGPT.builder(token: "your token here");
   }
 
   void changeRecognizedWords(String words) {

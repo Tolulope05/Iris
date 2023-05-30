@@ -39,22 +39,24 @@ class _HomeState extends ConsumerState<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "Iris",
-          style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color),
+          style: TextStyle(color: Theme.of(context).primaryColor),
         ),
         elevation: 0.5,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: Padding(
-        padding: const EdgeInsets.only(left: 40),
+        padding: EdgeInsets.only(bottom: 40),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const KeyboardInput(),
+            KeyboardInput(),
             MicAction(player: player),
           ],
         ),
