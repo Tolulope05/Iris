@@ -7,7 +7,7 @@ import 'package:lets_chat/shared/route_config.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-void main() async {
+void main() {
   runApp(const Iris());
 }
 
