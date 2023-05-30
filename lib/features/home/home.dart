@@ -39,7 +39,7 @@ class _HomeState extends ConsumerState<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: Colors.black,
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
@@ -52,11 +52,11 @@ class _HomeState extends ConsumerState<Home> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: Padding(
-        padding: EdgeInsets.only(bottom: 40),
+        padding: const EdgeInsets.only(left: 40),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            KeyboardInput(),
+            const KeyboardInput(),
             MicAction(player: player),
           ],
         ),
